@@ -48,6 +48,9 @@ ul {
   list-style: none;
 }
 /** Utilidades */
+.margin-b-2 {
+  margin-block: 2rem;
+}
 .centrar-txt {
   text-align: center;
 }
@@ -58,6 +61,9 @@ ul {
   font-weight: bold;
 }
 
+.flow-2 > *{
+  margin-bottom: 2rem;
+}
 .contenedor {
   max-width: 120rem;
   width: 90%;
@@ -151,11 +157,9 @@ ul {
 }
 
 /** Sidebar */
-.curso {
+.curso--widget,
+.curso{
   border-bottom: 2px solid var(--color-neutral);
-}
-.curso > * {
-  margin-bottom: 2rem;
 }
 .curso__titulo {
   font-family: var(--fuente-secundaria);
@@ -202,6 +206,15 @@ ul {
 .nosotros__imagen {
   align-self: center;
 }
-.nosotros__informacion p {
-  margin-block: 2rem;
+
+/*? ---- Página cursos ---- */
+.curso {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .curso {
+    grid-template-columns: 1fr;
+  }
 }
