@@ -182,3 +182,26 @@ ul {
 .footer__enlace {
   font-size: 1.4rem;
 }
+
+/*? ---- Página nosotros ----  */
+
+.nosotros__contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 768px) {
+  .nosotros__contenido {
+    grid-template-columns: 1fr;
+  }
+}
+.nosotros__titulo {
+  margin-block: 3rem;
+}
+.nosotros__imagen {
+  align-self: center;
+}
+.nosotros__informacion p {
+  margin-block: 2rem;
+}
