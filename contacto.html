@@ -34,15 +34,32 @@
     </div>
   </header>
 
-  <main class="nosotros || contenedor">
-    <h3 class="nosotros__titulo || centrar-txt">Sobre Nosotros</h3>
-    <div class="nosotros__contenido">
-      <img class="nosotros__imagen" src="./img/nosotros.jpg" alt="Tazas de café">
-      <div class="nosotros__informacion">
-        <p class="margin-b-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptates unde accusantium recusandae deleniti illo beatae numquam minima modi quasi, neque, repellat, vitae sunt corporis. Accusamus iste delectus recusandae.</p>
-        <p class="margin-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor, cupiditate accusantium, architecto quas nemo corporis illo deserunt hic, blanditiis cum iure beatae quasi provident quia. Nesciunt, ab quaerat.</p>
+  <main class="contacto || contenedor">
+    <h3 class="centrar-txt">Contacto</h3>
+
+    <div class="contacto__background"></div>
+
+    <form class="contacto__formulario">
+      <div class="campo">
+        <label class="campo__label" for="nombre">Nombre</label>
+        <input class="campo__field" id="nombre" type="text" placeholder="Tu nombre">
       </div>
-    </div>
+
+      <div class="campo">
+        <label class="campo__label" for="email">E-mail</label>
+        <input class="campo__field" id="email" type="text" placeholder="Tu Email">
+      </div>
+
+      <div class="campo">
+        <label class="campo__label" for="mensaje">Mensaje</label>
+        <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+      </div>
+
+      <div class="campo">
+        <input type="submit" class="campo__boton || boton boton--primario" value="Enviar">
+      </div>
+      
+    </form>
   </main>
 
   <footer class="footer">

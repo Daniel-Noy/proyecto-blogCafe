@@ -37,7 +37,10 @@ h4 {
 
 h1 { font-size: 4.8rem; }
 h2 { font-size: 4rem;   }
-h3 { font-size: 3.2rem; }
+h3 {
+  font-size: 3.2rem;
+  margin-block: 1.2rem;
+}
 h4 { font-size: 2.4rem; }
 
 img {
@@ -73,11 +76,13 @@ ul {
   display: inline-block;
   margin-block: 1rem;
   padding: 1rem 3rem;
+  border: 0;
 
   color: var(--color-claro);
   font-family: var(--fuente-secundaria);
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 @media (max-width: 480px) {
   .boton {
@@ -94,7 +99,7 @@ ul {
 
 /** ---- Header ----  */
 .header {
-  height: 60rem;
+  height: 50rem;
 
   color: var(--color-claro);
   background-image: url(../img/banner.jpg);
@@ -125,7 +130,7 @@ ul {
   }
 }
 .header__texto {
-  margin-top: 20rem;
+  margin-top: 15rem;
 }
 @media (max-width: 768px) {
   .header__texto {
@@ -217,4 +222,50 @@ ul {
   .curso {
     grid-template-columns: 1fr;
   }
+}
+
+/*? ---- Página entrada ---- */
+.entrada__imagen {
+  max-width: 800px;
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+
+/*? ---- Contacto ---- */
+.contacto__background {
+  height: 40rem;
+  background-image: url(../img/contacto.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contacto__formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  width: 95%;
+  margin: -5rem auto 0;
+  padding: 2rem;
+
+  background-color: var(--color-claro);
+}
+.campo {
+  display: flex;
+  gap: 2rem;
+}
+.campo__label {
+  flex-basis: 9rem;
+  text-align: right;
+}
+.campo__field {
+  flex-grow: 1;
+  padding: .2rem 1rem;
+  border:2px solid var(--color-neutral);
+}
+.campo__field--textarea {
+  height: 20rem;
+}
+.campo__boton {
+  margin-left: auto;
 }
