@@ -84,6 +84,18 @@ ul {
   text-transform: uppercase;
   cursor: pointer;
 }
+.mensaje {
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-claro);
+}
+.mensaje--error {
+  background-color: #b90000;
+}
+.mensaje--correcto {
+  background-color: green;
+}
 @media (max-width: 480px) {
   .boton {
     text-align: center;
@@ -259,12 +271,16 @@ ul {
   text-align: right;
 }
 .campo__field {
+  display: inline-block;
   flex-grow: 1;
   padding: .2rem 1rem;
   border:2px solid var(--color-neutral);
 }
 .campo__field--textarea {
   height: 20rem;
+}
+.campo__field--vacio {
+  border: 2px solid red;
 }
 .campo__boton {
   margin-left: auto;
