@@ -25,7 +25,7 @@ nuevoEnlace.classList.add('navegacion__enlace');
 enlaces.appendChild(nuevoEnlace);
 
 
-
+// Validacion de formulario
 formulario.addEventListener('submit', (e)=> {
   e.preventDefault();
 
@@ -43,6 +43,7 @@ formulario.addEventListener('submit', (e)=> {
 camposFormulario.forEach((input)=> {
   input.addEventListener('input', leerTexto)
 })
+
 // btnEnviar.addEventListener('click', (e)=> {
 //   e.preventDefault();
 //   console.log('Click al boton');
@@ -63,8 +64,9 @@ function mostrarMensaje (mensaje, tipo) {
   alerta.classList.add('mensaje');
   alerta.classList.add(`mensaje--${tipo}`)
 
-  formulario.appendChild( alerta )
+  formulario.appendChild( alerta );
 
+//? El elemento desaparece en 5 segundos
   setTimeout(()=> {
     alerta.remove()
   }, 4000)
